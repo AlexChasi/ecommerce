@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeStore</title>
+    <link rel="shortcut icon" href="assets/img/programacion.png" 
+    type="image/x-icon"/>
+
+
+        <!–– Fonts aquí se pega el link de las fuentes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Maven+Pro&family=Roboto:ital,wght@0,300;0,900;1,900&display=swap" rel="stylesheet">
+
+        <!–– Boxicons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <!–– CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!–– JS -->
+        <script src="assets/js/main.js" type="module" defer></script>
+</head>
+
+<body>
+    <!–– Loader -->
+    <div class="Loader">
+        <div class="loader__container">
+            <span></span>
+          </div>
+    </div>
+
+
+    <!–– Header -->
+
+    <div class="Encabezado">
+        <h1>Para los programadores camisetas y más..</h1>
+        <h2 class="products__title section--title">Productos Destacados</h2>
+    </div>
+    
+    <header>
+        <header class="header">
+
+            <nav class="nav contanier">
+
+                <a href="/" class="nav__logo"> <!––  Se redirecionen a la pag. inicio (/) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="logo--icon">
+                        <path fill="currentColor"
+                             d="M21.316 4.055C19.556 3.478 15 1.985 15 2a3 3 0 1 1-6 0c0-.015-4.556 1.478-6.317 2.055A.992.992 0 0 0 2 5.003v3.716a1 1 0 0 0 1.242.97L6 9v12a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V9l2.758.689A1 1 0 0 0 22 8.719V5.003a.992.992 0 0 0-.684-.948z">
+                        </path>
+                    </svg>                        
+                </a>
+                
+                <div class ="nav__menu">
+
+                    <button type="button" class="nav__btn--close" >
+                        <i class="bx bx-x"></i>
+                    </button>
+
+                    <ul class="nav__list"> 
+                        <!–– Menú -->
+                        <li>
+                            <a href="#"class="nav__link">Sobre nosotros</a>
+                        </li>
+                        <li>
+                            <a href="#"class="nav__link">Productos</a>
+                        </li>
+                        <li>
+                            <a href="#"class="nav__link">Contáctanos</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="nav__buttons">
+                    <button type="button" class="nav__btn btn--cart">  
+                        <i class="bx bx-cart"></i>
+                        <span class="notif">0</span>
+                    </button>
+                </div>
+
+            </nav>
+    </header>
+    
+    <!–– Cuerpo (Main)-->
+    <main class="main">
+
+        <section class="products section">
+          <div class="products__container container">
+          </div>
+        </section>
+    </main>
+
+    <!--
+    <div class="cart">
+        <div class="cart__container">
+            <div class="cart__header"></div>
+                <h3>Mi carrito de compras</h3>
+                <button type="button" class="cart__btn btn--close">
+                    <i class='bx bxs-cart-add'></i>
+                </button>
+            <div class="cart__body">
+                <div class="cart__empty">
+                    <i class='bx bxs-cart-add'></i>
+                    <p class="cart__empty--text">No hay productos en el carrito</p>
+                </div> 
+                <article class="article">
+                    <div class="article__image">
+                        <img src="assets/img/6_stages_of_debugging.jpeg" alt="Producto 1">
+                    </div>
+                    <div class="article__content">
+                        <h3 class="article__title">Camiseta de manga corta con cuello redondo</h3>
+                        <span class="article__price">$10</span>
+                        <div class="article__quantity">
+                            <button type="button" class="article__quantity-btn article--minus">
+                                <i class='bx bx-minus'></i>
+                            </button>
+                            <span class="article__quantity-text">1</span>
+                            <button type="button" class="article__quantity-btn article--plus">
+                                <i class='bx bx-plus-medical'></i>
+                            </button>
+                        </div>
+                        <button type="button" class="article__btn remove-from-cart"></button>>
+                            <i class='bx bx-trash' ></i>
+                        </button>
+                    </div>
+                </article>
+            </div>
+            <div class="cart__footer">
+                <div class="cart__count">
+                    <span class="cart__count--text">Articulos</span>
+                    <span class="cart__count--item">0</span>
+                </div>
+                <div class="cart__total">
+                    <span class="cart__count--text">Total</span>
+                    <span class="cart__total--item">$0</span>
+                </div>
+                <button type="button" class="cart__btn btn--buy">
+                    Comprar
+                </button>
+            </div>
+        </div>
+    </div> 
+  -->
+
+
+    <!–– Pie de pagina -->
+    <footer class="footer section">
+        <div class="footer__container container">
+            <div class="footer__top">
+                <div class="footer__left">
+                    <h3 class="footer__title">Sobre nosotros</h3>
+                    <p class="footer__text">Este proyecto fue desarrollado por Alex Chasi.</p>
+                </div>
+                <div class="footer__rigth">
+                    <h3 class="footer__title">Redes sociales</h3>
+                    <ul class="footer__social">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                 <i class='bx bxl-github'></i>
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                <i class='bx bxl-facebook-circle'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+            <div class="footer__bottom">
+                <p class="footer__text">Todos los derechos reservados a CodeStore &copy; 2023</p>
+            </div>
+        </div> 
+    </footer>
+    <div class="modal-container"></div>
+    <div class="cart-container">
+        <div class="cart">
+          <div class="cart__header">
+            <h3>Tu compra</h3>
+            <button class="close__btn">
+              <i class="bx bx-x"></i>
+            </button>
+          </div>
+          <div class="cart__info">
+
+          </div>
+          <div class="cart-footer">
+            <div class="cart__prices">
+              <h3 class="total">TOTAL <span>$0</span></h3>
+            </div>
+            <div class="cart__buttons">
+              <button>Comprar</button>
+              <button>Vaciar</button>
+            </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+
+</html>
